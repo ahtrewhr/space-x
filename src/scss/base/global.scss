@@ -1,0 +1,54 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: $base-bg-color;
+	font-family: roboto, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	color: $base-text-color;
+}
+
+body.no-scroll {
+	overflow: hidden;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+main {
+	flex: 1 0 auto;
+}
+
+.container {
+	max-width: 1230px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.title {
+	margin: 0;
+}

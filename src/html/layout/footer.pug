@@ -1,0 +1,26 @@
+-
+	var socialList = [
+		{name: 'twitter', link: '#'},
+		{name: 'youtube', link: '#'},
+		{name: 'flickr', link: '#'},
+		{name: 'linkedIn', link: '#'}
+	]
+
+include ../components/ui/btn
+
+footer.footer
+	.container
+		.footer__inner
+			.logo
+				a(href="/")
+					img(src="@img/svg/logo.svg", alt="logo")
+			ul.social__list.footer__social-list
+				each item in socialList
+					li.social__list-item
+						a.social__list-link(href=item.link)
+							svg.social__list-icon
+								use(xlink:href='@img/icons/sprite-icons.svg#' + item.name)
+			p.footer__text
+					| For additional questions, contact 
+					a(href="mailto:rideshare@spacex.com") rideshare@spacex.com
+			+btn('#', 'Contact us')(class="btn footer__btn")

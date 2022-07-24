@@ -1,0 +1,36 @@
+-
+	var menu = [
+		{menuLink: 'About', link: '#'},
+		{menuLink: 'Gallery', link: '#'},
+		{menuLink: 'Shop', link: '#'}
+	]
+
+	var navigation = [
+		{navLink: 'Falcon 9', link: '#'},
+		{navLink: 'Falcon Heavy', link: '#'},
+		{navLink: 'Dragon', link: '#'},
+		{navLink: 'Updates', link: '#'}
+	]
+
+header.header
+	.container
+		.header__inner
+			.logo
+				a(href="/")
+					img(src="@img/svg/logo.svg", alt="logo")
+			nav.navigation
+				ul.navigation__list.navigation-js
+					each item in navigation
+						li.navigation__list-item
+							a.navigation__list-link(href=item.link)= item.navLink
+			nav.navigation
+				ul.navigation__list.menu-js
+					each item in menu
+						li.navigation__list-item
+							a.navigation__list-link.navigation__list-link--menu(href=item.link)= item.menuLink
+			.hamburger#hamburger
+				.hamburger__field
+					span.hamburger__field-bar
+					span.hamburger__field-bar
+					span.hamburger__field-bar
+		.hamburger__popup-menu#hamburger-popup

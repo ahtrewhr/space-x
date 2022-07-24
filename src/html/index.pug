@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+	include layout/head
+	body
+		.wrapper
+			include layout/header
+			main
+				section.page-section
+					.container
+						include components/sections/main
+				section.performance
+					.container
+						include components/sections/performance
+
+			include layout/footer
+	script(src="js/app.min.js")

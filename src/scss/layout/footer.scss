@@ -1,0 +1,47 @@
+.footer {
+
+	&__inner {
+		padding: 50px 0;
+		text-align: center;
+	}
+
+	&__social-list {
+		margin-top: 28px;
+	}
+
+	&__text {
+		margin-top: 28px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		color: $grey-text-color;
+	}
+
+	&__btn {
+		margin-top: 28px;
+	}
+}
+
+@media (max-width: 768px) {
+	.footer {
+
+		&__inner {
+			padding: 20px 20px 40px;
+		}
+
+		&__text {
+			font-size: 16px;
+			line-height: 19px;
+		}
+
+		& .social__list-icon {
+			width: 32px;
+			height: 32px;
+		}
+
+		&__btn.btn {
+			padding: 10px 45px;
+		}
+
+	}
+}

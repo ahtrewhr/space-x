@@ -1,0 +1,30 @@
+.header {
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 50px 30px 60px;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.header {
+
+		&__inner {
+			padding: 20px;
+		}
+
+	}
+}
+
+@media (max-width: 480px) {
+	.header {
+
+		&__inner {
+			padding: 10px;
+		}
+
+	}
+}
